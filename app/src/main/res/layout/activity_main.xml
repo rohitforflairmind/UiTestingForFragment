@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:background="#F6F0E8"
+    android:layout_height="match_parent">
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:text=" Hey User "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+<LinearLayout     android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:text="Here is how you spent your"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        />
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        android:textSize="20sp"
+        android:text=" Time"
+        android:textColor="#EE4E34"
+
+        android:textStyle="normal"
+
+
+        />
+</LinearLayout>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+android:textColor="#424140"
+        android:textSize="20sp"
+        android:text= "We want to help you to improve your Work Life balance.
+set your targets for a better life and get rewarded."
+
+        android:textStyle="italic"
+
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Sliderl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        app:cardBackgroundColor="#fe7e34"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp" >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            app:tabSelectedTextColor="#EE4E34"
+            app:tabIndicatorColor="#EE4E34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabMode="fixed" />
+    </com.google.android.material.appbar.AppBarLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>

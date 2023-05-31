@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_background"
+    android:padding="4dp"
+    android:layout_margin="5dp"
+    android:elevation="10dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.4"
+    android:padding="20dp">
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:maxHeight="200dp"
+        android:maxWidth="200dp"
+
+        />
+</LinearLayout>
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="Title"
+        android:textColor="#424140"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/info1TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:text="Info 1"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="4dp"
+        />
+
+    <TextView
+        android:id="@+id/info2TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:text="Info 2"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:id="@+id/info3TextView"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:text="Info 3"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="2dp"
+        />
+
+</LinearLayout>
